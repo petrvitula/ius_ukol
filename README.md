@@ -1,0 +1,8 @@
+Repo for 1st home-work on university - subject IUS
+
+Dopravní podnik Brno plánuje modernizaci řídícího systému, který umožní dispečerům zobrazovat aktuální stav provozu a cestujícím zobrazit nejbližší spoje prostřednictvím panelů na zastávkách a mobilní aplikace. Vy jste byli požádáni o vytvoření ER diagramu jako základu tohoto systému.
+V rámci systému máme řadu zastávek, každá identifikována číslem a dále má jméno a GPS pozici. V systému jsou vedeny linky, kde každá je identifikována svým číslem a seznamem zastávek číslovaným postupně od výchozí do konečné zastávky. K lince vedeme seznam zastávek číslovaný postupně od výchozí do konečné zastávky. (*)
+Každá linka obsahuje spoje. Spoj je identifikován číslem linky a číslem spoje a pro každý spoj si pamatujeme omezení jízdy (pouze pracovní den, sobota, neděle). Každý spoj má svůj jízdní řád určený zastávkami, kde ke každé zastávce si pamatujeme její pořadí v rámci spoje (číslováno od 1), čas příjezdu a odjezdu a nástupiště na zastávce.
+Linka je obsluhována několika vozy. Každý vůz obslouží za den několik spojů. Nasazení vozu na lince je jednoznačně určeno kmenovou linkou a pořadovým číslem na této lince. Dále si pro každé nasazení vozu pamatujeme čas výjezdu z vozovny, čas příjezdu do vozovny a stav (v provozu, ve vozovně, přestávka, porucha).
+Systém vede historii pozic nasazených vozů, kde každá pozice je jednoznačně určena linkou a pořadím nasazeného vozu, datem a časem. Ke každé pozici si dále evidujeme zastávku a spoj.
+Systém bude dále umožňovat připojení různých dalších aplikací pro zobrazování aktuálních informací prostřednictvím jednoznačně definovaného rozhraní.
